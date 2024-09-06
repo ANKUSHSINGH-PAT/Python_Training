@@ -1,0 +1,6 @@
+[
+    {"name": "Laptop", "price": 799.99},
+    {"name": "Headphones", "price": 29.99},
+    {"name": "Keyboard", "price": 49.99},
+    {"name": "Monitor", "price": 199.99}
+]

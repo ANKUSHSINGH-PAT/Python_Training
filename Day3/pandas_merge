@@ -1,0 +1,30 @@
+'''
+import pandas as pd
+import numpy as np
+data={"deptid":[10,20,30],
+      "empid":[100,200,300]}
+x=pd.DataFrame(data)
+print(x)
+data2={"deptid":[10,20,40],
+       "salary":[1000,2000,3000]
+}
+y=pd.DataFrame(data2)
+print(y)
+z=pd.merge(x,y,left_on="deptid",right_on="deptid",how='inner') #how =innner
+z1=pd.merge(x,y,left_on="deptid",right_on="deptid",how='cross')
+z2=pd.merge(x,y,left_on="deptid",right_on="deptid",how="right")
+
+print("Inner Join")
+print(z)
+
+print("Cross Join")
+print(z1)
+#
+# list1=["A",1,"B"]
+# print(list1)
+'''
+
+
+df=pd.DataFrame(np.random.rand(10,3),columns=['col1','col2','col3'])
+print(df.apply(np.sum(df)))
+
